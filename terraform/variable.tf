@@ -9,7 +9,7 @@ variable "location" {
 }
 
 locals {
-  service_name = "sandbox-work"
+  service_name = "sandbox"
 
   tags = {
     "Landscape" = "DEV"
