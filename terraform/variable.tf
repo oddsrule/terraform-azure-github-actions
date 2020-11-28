@@ -1,16 +1,18 @@
 # Provider 
 variable "agent_client_id" {}
-
 variable "agent_client_secret" {}
-
 variable "subscription_id" {}
 variable "tenant_id" {}
+variable "location" {
+  default = "West US 2"
+  type    = string
+}
 
 locals {
-  service_name = "pliyo-web"
+  service_name = "sandbox-work"
 
   tags = {
-    "OWNER"     = "Pliyo"
-    "TERRAFORM" = "true"
+    "Landscape" = "DEV"
+    "Terraform" = "true"
   }
 }
