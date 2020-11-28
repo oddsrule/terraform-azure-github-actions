@@ -1,5 +1,5 @@
 provider "azurerm" {
-  version = ">=2.0.0"
+  version = "=2.34.0"
 
   tenant_id       = "${var.tenant_id}"
   subscription_id = "${var.subscription_id}"
