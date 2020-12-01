@@ -2,7 +2,7 @@ name: "Terraform Deploy"
 on:
   push:
     branches:
-      - backend-work
+      - master
 jobs:
   terraform:
     name: "Terraform"
